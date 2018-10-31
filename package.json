@@ -9,6 +9,10 @@
     "test": "ng test mdb-angular-free",
     "lint": "ng lint mdb-angular-free",
     "e2e": "ng e2e mdb-angular-free",
+<<<<<<< HEAD
+=======
+    "postinstall": "ng build --aot --prod",
+>>>>>>> 9449b0fc6d07f3f02b4c8917394c28d9e492923f
     "remove-demo-unix": "rm -rf projects && rm angular.json && mv angular-clean.json angular.json",
     "remove-demo-windows": "rmdir /s /q projects && del angular.json && ren angular-clean.json angular.json"
   },
