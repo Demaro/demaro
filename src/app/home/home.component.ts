@@ -15,8 +15,8 @@ export class HomeComponent implements OnInit {
 
   scroll(id) {
 
-    console.log("el id: ", id);
-    let el = document.getElementById(id);
+    console.log('el id: ', id);
+    const el = document.getElementById(id);
     el.scrollIntoView();
   }
 
