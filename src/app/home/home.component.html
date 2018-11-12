@@ -1,17 +1,39 @@
  <!-- Intro Section -->
- <div class="view intro-video" data-jarallax='{"speed": 0.2}'>
+ <mdb-carousel [isControls]="true" [interval]="2000" class="carousel slide carousel-fade" [animation]="'fade'">
 
-  <video  playsinline autoplay muted loop>
-    <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4">
-</video>
-<div class="mask rgba-indigo-light">
+    <mdb-carousel-item>
+        <div class="view w-100">
+        <div class="view jarallax waves-light" mdbWavesEffect data-jarallax='{"speed": 0.2}' style="background-image: url(/assets/code.jpg);">
+        <div class="full-bg-img mask rgba-black-light">
+          <div class="container flex-center">
+              <div class="row pt-5 mt-3 w-100">
+                  <div class="col-md-12">
+                      <div class="text-center">
+                          <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>David Martínez R.</strong></h2>
+                          <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+                          <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>engineering in software development and design</strong></h5>
+                          <a  (click)="scroll('portafolio')" mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>portfolio</a>
+                          <a mdbBtn (click)="scroll('about')" color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>About me</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </mdb-carousel-item>
+
+  <mdb-carousel-item>
+  <div class="view w-100">
+  <div class="view jarallax waves-light" mdbWavesEffect data-jarallax='{"speed": 0.2}' style="background-image: url(/assets/back1.jpg);">
+  <div class="full-bg-img mask rgba-black-light">
     <div class="container flex-center">
         <div class="row pt-5 mt-3 w-100">
             <div class="col-md-12">
                 <div class="text-center">
                     <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>David Martínez R.</strong></h2>
                     <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-                    <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>engineering & software design</strong></h5>
+                    <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Frontend Developer</strong></h5>
                     <a  (click)="scroll('portafolio')" mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>portfolio</a>
                     <a mdbBtn (click)="scroll('about')" color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>About me</a>
                 </div>
@@ -20,27 +42,70 @@
     </div>
   </div>
 </div>
+</div>
+</mdb-carousel-item>
+
+<mdb-carousel-item>
+    <div class="view w-100">
+    <div class="view jarallax waves-light" mdbWavesEffect data-jarallax='{"speed": 0.2}' style="background-image: url(/assets/sky.jpg);">
+    <div class="full-bg-img mask rgba-black-light">
+      <div class="container flex-center">
+          <div class="row pt-5 mt-3 w-100">
+              <div class="col-md-12">
+                  <div class="text-center">
+                      <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>David Martínez R.</strong></h2>
+                      <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+                      <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Backend Developer</strong></h5>
+                      <a  (click)="scroll('portafolio')" mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>portfolio</a>
+                      <a mdbBtn (click)="scroll('about')" color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>About me</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </mdb-carousel-item>
+
+  <mdb-carousel-item>
+      <div class="view w-100">
+      <div class="view jarallax waves-light" mdbWavesEffect data-jarallax='{"speed": 0.2}' style="background-image: url(/assets/astro1.jpg);">
+      <div class="full-bg-img mask rgba-black-light">
+        <div class="container flex-center">
+            <div class="row pt-5 mt-3 w-100">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h2 class="h1 h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s"><strong>David Martínez R.</strong></h2>
+                        <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+                        <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Power of the cosmos and energy of galaxies</strong></h5>
+                        <a  (click)="scroll('portafolio')" mdbBtn color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>portfolio</a>
+                        <a mdbBtn (click)="scroll('about')" color="white" outline="true" class="wow fadeInDown waves-light" data-wow-delay="0.4s" mdbWavesEffect>About me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </mdb-carousel-item>
+
+
+
+</mdb-carousel>
 
 
 <div id="about"></div>
   <main>
       <div  class="container">
           <section class="text-center pb-3 my-5">
-  <!--Section: Features v.3-->
-
-
-
-    <!--Section heading-->
 
     <!--Grid column-->
 
-
-
     <div   class="col-lg-12 col-md- mb-lg-0 mb-4 px-5 mb-5 pb-3">
       <!--Card-->
-      <mdb-card class="testimonial-card">
+      <mdb-card  class="testimonial-card">
         <!--Background color-->
-        <div class="card-up demaro-gradient"></div>
+        <div mdbWavesEffect class="card-up demaro-gradient waves-light"></div>
         <!--Avatar-->
         <div class="avatar mx-auto white">
 
@@ -48,7 +113,7 @@
     <div class="background"></div>
 
 
-    <div id="curve" class=" card1 circle text-center rounded-circle ">
+    <div id="curve" mdbWavesEffect class=" card1 circle text-center rounded-circle waves-light">
 
         <img src="assets/Doge.jpg" class="demaro">
 
@@ -305,7 +370,8 @@
                           http services with Django REST framework, mdbootstrap, sass, html5, git, firebase.
                       </p>
                       <a mdbBtn color="success" size="md" href="https://ekermet.herokuapp.com/#/" target="_blank" rounded="true" class="waves-light" mdbWavesEffect>
-                          <i class="fa fa-eye left"></i> View project</a>
+                          <i class="fa fa-eye left"></i> View project
+                      </a>
                   </div>
               </div>
           </div>
@@ -326,7 +392,7 @@
                           <strong>djng cool</strong>
                       </h3>
                       <p class="pb-3">website, demo in which is development with Angular
-                        with http services through backend in Django REST, design resposivo,
+                        with http services through backend in Django REST, design responsive,
                         bootstrap4, css3, animated.
                       </p>
                       <a mdbBtn color="blue" size="md" rounded="true" class="waves-light" mdbWavesEffect>
