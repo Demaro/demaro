@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent],
