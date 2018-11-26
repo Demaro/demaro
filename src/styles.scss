@@ -3,7 +3,7 @@
   height: unset !important;
 }
 .top-nav-collapse {
-  background: linear-gradient(to right, #2982ff 0, #151838 100%);
+  background: linear-gradient(to right,#1b61c5d9 0, #092958eb, #151838 100%);
 }
 .view {
   height: 100vh !important;
@@ -13,9 +13,10 @@
 }
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background: linear-gradient(to right, #2982ff 0, #151838 100%);
+    background: linear-gradient(to right,#1b61c5d9 0, #092958eb, #151838 100%);
   }
-}
+  }
+
 .rgba-gradient .full-bg-img {
   background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
 }

@@ -19,6 +19,7 @@
       "resources": {
         "files": [
           "/assets/**",
+          "/assets/favicon.ico",
           "/assets/astro1.jpg",
           "/assets/sky.jpg",
           "/assets/back1.jpg",
