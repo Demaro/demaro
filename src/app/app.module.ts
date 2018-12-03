@@ -16,7 +16,7 @@ import { environment } from '../environments/environment';
     HomeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
