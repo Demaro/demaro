@@ -1,23 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent  implements OnInit {
+export class AppComponent  {
   title = 'app';
 
 
-    ngOnInit() {
 
-      console.log("dfxd")
-  }
+scroll(id) {
 
-  scroll(id) {
-
-    console.log('el id: ', id);
-    const el = document.getElementById(id);
-    el.scrollIntoView();
-  }
+  console.log('el id: ', id);
+  const el = document.getElementById(id);
+  el.scrollIntoView();
 }
+}
+
+
