@@ -29,16 +29,5 @@
       }
     }
   ],
-  "dataGroups": [
-    {
-      "name": "api",
-      "urls": ["https://ekermet.herokuapp.com/api/usuarios/"],
-      "cacheConfig": {
-        "maxSize": 100,
-        "maxAge": "3d",
-        "timeout": "1m",
-        "strategy": "freshness"
-      }
-    }
-  ]
+
 }
