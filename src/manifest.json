@@ -50,7 +50,8 @@
   ],
 
   "related_applications": [{
-    "platform": "web"
+    "platform": "web",
+    "url":      "https://demarocreate.herokuapp.com/"
   } ]
 
 }
