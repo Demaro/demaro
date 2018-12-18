@@ -6,8 +6,6 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "resources": {
-    "files": ["/favicon.ico", "/index.html", "/*.css", "/*.js"],
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
@@ -51,12 +49,10 @@
     }
   ],
 
-  "related_applications": [
-    {
-    "platform": "web",
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play"
+  }]
 
-    }
-  ]
-
-  }
 }
