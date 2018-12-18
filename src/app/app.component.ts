@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
+  scroll(id) {
+
+    console.log('el id: ', id);
+    const el = document.getElementById(id);
+    el.scrollIntoView();
+  }
 }
