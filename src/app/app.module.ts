@@ -9,11 +9,13 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
