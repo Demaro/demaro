@@ -8,3 +8,5 @@ export const environment = {
     storageBucket: "demaro-create.appspot.com",
     messagingSenderId: "149230688145"
   }
+
+}
