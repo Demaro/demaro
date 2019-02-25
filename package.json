@@ -1,6 +1,9 @@
 {
   "name": "mdb-angular-free",
   "version": "6.2.6",
+  "engines": {
+    "node": "8.12.0"
+  },
   "license": "MIT",
   "scripts": {
     "ng": "ng",
