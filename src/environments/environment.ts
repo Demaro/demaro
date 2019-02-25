@@ -4,8 +4,19 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  firebase: {
+    apiKey: "AIzaSyAK8o2IHWjvaNL2iM9eLfRi6wyJFGvNeds",
+    authDomain: "demaro-create.firebaseapp.com",
+    databaseURL: "https://demaro-create.firebaseio.com",
+    projectId: "demaro-create",
+    storageBucket: "demaro-create.appspot.com",
+    messagingSenderId: "149230688145"
+  }
+
 };
+
+
 
 /*
  * In development mode, to ignore zone related error stack frames such as
