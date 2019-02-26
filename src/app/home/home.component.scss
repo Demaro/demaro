@@ -10,8 +10,8 @@
   filter: blur(30px);
 }
 
-.rgba-gradient .full-bg-img {
-  background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
+.rgba-gradient {
+  background: linear-gradient(45deg, #000000c4, rgba(0, 41, 105, 0.54), rgb(0, 0, 0) 100%);
 
 }
 
@@ -49,6 +49,8 @@
 .testimonial-card .avatar {
 
   width: 200px !important;
+  height: 100%;
+
 
 }
 
@@ -105,7 +107,6 @@ a[ id= "curve" ]:target ~ #panel article.panel {
 .demaro-gradient {
   background: linear-gradient(to right,#1b61c5d9 0, #092958eb, #151838 100%);
 }
-
 
 
 

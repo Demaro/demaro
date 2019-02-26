@@ -8,22 +8,14 @@
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    margin-left: -300px !important;
-}
+    .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+      margin-left: -300px !important;
+  }
 
-}
-.logo-size{
-  width: 6%;
-}
+  }
 
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    margin-left: -300px !important;
-}
-
-}
+  .logo-d{
+    width: 16%;
+  }

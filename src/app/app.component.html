@@ -1,30 +1,44 @@
-<!-- Main navigation -->
-<header class="intro-header">
 
-    <!--Navbar-->
-    <mdb-navbar  SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <mdb-navbar  id="navbar" data-toggle="collapse" data-target=".nav-collapse" SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+
         <mdb-navbar-brand>
-            <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"></a>
+            <a class="navbar-brand wow fadeIn" [routerLink]="['']"> <img src="assets/letter-d.png" class="logo-d">  <p class="homelink"></p></a>
         </mdb-navbar-brand>
-        <links>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active waves-light" mdbWavesEffect>
-                    <a class="nav-link" (click)="scroll('about')" href="#">About <span class="sr-only">(current)</span></a>
-                </li>
 
-                <li class="nav-item waves-light" mdbWavesEffect>
-                    <a class="nav-link" href="#" (click)="scroll('portafolio')">Portfolio</a>
-                </li>
-            </ul>
-            <form class="form-inline waves-light" mdbWavesEffect>
-                <mdb-navbar-brand>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                </mdb-navbar-brand>
-            </form>
-        </links>
-    </mdb-navbar>
+    <links>
 
-  </header>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        </ul>
+
+
+    <div  class="d-flex flex-row order-2 order-lg-3">
+
+        <div class="btn-group links-left" >
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+
+
+                  <!--
+                        <li class="nav-item wow fadeIn"  data-wow-delay="0.9s" routerLinkActive="active"><a class="nav-link dropdown-toggle" [routerLink]="['notifi']"><i class="fa fa-bell fa-lg"></i></a></li>
+                        <li class="nav-item wow fadeIn"  data-wow-delay="0.6s" routerLinkActive="active"><a class="nav-link" [routerLink]="['#donar']"><i class="fa fa-heart fa-lg"></i></a></li>
+                        <li class="nav-item wow fadeIn"  data-wow-delay="0.3s" routerLinkActive="active"><a class="nav-link waves-light" [routerLink]="['dashboard']"><i class="fa fa fa-chart-pie fa-lg"></i></a></li>
+                  -->
+                    <li class="nav-item wow fadeInRight" mdbDropdown>
+                        <a  (click)="loginGoogle()" mdbBtn color="white" outline="true" class="wow fadeIn waves-light" data-wow-delay="0.4s" mdbWavesEffect>Ingresar</a>
+
+                    </li>
+
+                    </ul>
+                 </div>
+    </div>
+
+    </links>
+
+    </mdb-navbar >
 
   <router-outlet></router-outlet>
 

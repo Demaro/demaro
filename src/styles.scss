@@ -1,39 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
-.intro-header {
-  height: unset !important;
-}
-.top-nav-collapse {
-  background: linear-gradient(to right,#1b61c5d9 0, #092958eb, #151838 100%);
-}
-.view {
-  height: 100vh !important;
-}
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: linear-gradient(to right,#1b61c5d9 0, #092958eb, #151838 100%);
-  }
-  }
 
 
-  .intro-2 {
-    background: url("/assets/code.jpg")no-repeat center center;
+// bootstrap style toast
+// or import a bootstrap 4 alert styled design (SASS ONLY)
+// should be after your bootstrap imports, it uses bs4 variables, mixins, functions
+
+// if you'd like to use it without importing all of bootstrap it requires
+.navbar>.container, .navbar>.container-fluid {
+  -ms-flex-wrap: wrap !important;
+
+}
+
+.mat-snack-bar-container {
+
+        padding: 25px 24px !important;
+
+    }
+
+
+body{
+    background-color: #f7f6f0;
+}
+
+
+.intro-2 {
+    background: url("https://mdbootstrap.com/img/Photos/Others/architecture.jpg")no-repeat center center;
     background-size: cover;
 
 }
 
+.btn .fa {
+    margin-left: 3px;
+}
+.top-nav-collapse {
+  background: linear-gradient(to right,#1b61c5d9 0, #092958eb, #151838 100%) !important;
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background: linear-gradient(to right,#1b61c5d9 0, #092958eb, #151838 100%) !important;
+    }
+}
+h6 {
+    line-height: 1.7;
+}
 .rgba-gradient .full-bg-img {
-  background: linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
+    background: linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
 }
+
 @media (max-width: 740px) {
-  .full-height,
-  .full-height body,
-  .full-height header,
-  .full-height header .view {
-      height: 700px;
-
-  }
-
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1020px;
+    }
 }
+
+
+      .dark{
+        background: linear-gradient(to right,#1b61c5d9 0, #092958eb, #151838 100%) !important;
+
+      }
+
+
+      .border-btn{
+        border-radius: 30px;
+      }
+
+      .icon-btn {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+

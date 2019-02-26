@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
+import { AuthService } from './core/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -11,20 +12,15 @@ export class AppComponent implements OnInit {
 
   jaja = "jaja";
 
-  constructor(private swUpdate: SwUpdate ) {
-  }
+  constructor(private swUpdate: SwUpdate, public auth: AuthService ) {}
 
   ngOnInit() {
 
     if (this.swUpdate.isEnabled) {
-
       this.swUpdate.available.subscribe(() => {
-
           if(confirm("Nueva version de impulsa, desea actualizarla?")) {
-
               window.location.reload();
           }
-
         });
   }
 }
@@ -34,6 +30,13 @@ scroll(id) {
   console.log('el id: ', id);
   const el = document.getElementById(id);
   el.scrollIntoView();
+}
+
+loginGoogle(){
+  this.auth.googleSignIn()
+  .then(data => {
+    console.log(data)
+  })
 }
 }
 
