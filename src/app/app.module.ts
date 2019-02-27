@@ -16,13 +16,15 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FirestoreSettingsToken} from '@angular/fire/firestore';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BlogComponent,
     ChatComponent,
-    UserProfileComponent
+    UserProfileComponent,
+
   ],
   imports: [
     BrowserModule,
