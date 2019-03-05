@@ -12,7 +12,10 @@ export class AppComponent implements OnInit {
 
   jaja = "jaja";
 
-  constructor(private swUpdate: SwUpdate, public auth: AuthService ) {}
+  public html: string = '<span class="btn btn-danger">Your HTML here</span>';
+
+  constructor(private swUpdate: SwUpdate, public auth: AuthService ) {
+  }
 
   ngOnInit() {
 
@@ -36,6 +39,9 @@ loginGoogle(){
   this.auth.googleSignIn()
   .then(data => {
     console.log(data)
+  })
+  .catch(err=>{
+    console.log(err)
   })
 }
 }

@@ -23,3 +23,57 @@
   .navbar-brand{
     margin-bottom: 16px !important;
   }
+
+  .img-user{
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .connection {
+    height: 86%;
+    width: 30%;
+    border-radius: 100%;
+    padding: 0px;
+    transform: translateX(130px);
+
+  }
+
+  @media (min-width: 500px) {
+    .connection {
+      transform: translateX(180px);
+  
+    }
+
+    
+
+  }
+
+  @media (min-width: 600px) {
+    .connection {
+      transform: translateX(220px);
+  
+    }
+  }
+
+    @media (min-width: 800px) {
+      .connection {
+        transform: translateX(300px);
+    
+      }
+
+    }
+
+      @media (min-width: 900px) {
+        .connection {
+          transform: translateX(180px);
+      
+        }
+
+  }
+
+  .dropdown-menu{
+    margin-left: 50% !important;
+    top: 30px !important;
+  }
+
+

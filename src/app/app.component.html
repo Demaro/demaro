@@ -2,39 +2,85 @@
     <mdb-navbar  id="navbar" data-toggle="collapse" data-target=".nav-collapse" SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
 
         <mdb-navbar-brand>
-            <a class="navbar-brand wow fadeIn" [routerLink]="['']"> <img src="assets/letter-d.png" class="logo-d">  <p class="homelink"></p></a>
+            <a class="navbar-brand wow fadeIn" [routerLink]="['']"> <img src="assets/letterD.png" class="logo-d">  <p class="homelink"></p></a>
         </mdb-navbar-brand>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
     <links>
 
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
+        
+
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                 
+
+                <div *ngIf="auth.user | async; then authenticated else guest">
+                    <!-- template will replace this div -->
+            </div>
+            
+            
+            <!-- User NOT logged in -->
+            <ng-template #guest>
+
+                
+                <li class="nav-item wow fadeInRight" mdbDropdown>
+                      
+                                
+
+
+                  <a  (click)="loginGoogle()" mdbBtn color="white" outline="true" class="wow fadeIn waves-light" data-wow-delay="0.4s" mdbWavesEffect>Ingresar <i class="fas fa-sign-in-alt"></i></a>
+                                
+
+                </li>
+
+
+                
+            
+            </ng-template>
+            
+            
+            <!-- User logged in -->
+            <ng-template #authenticated>
+
+                   
+                <div *ngIf="auth.user | async as user">
+
+
+                        <div class="dropdown" mdbDropdown>
+                                                    
+                            <button mdbDropdownToggle 
+                                mdbBtn floating="true" outline="true" size="sm" 
+                                class="mx-1 mb-0 btn-fb connection wow fadeIn waves-light" 
+                                type="button" mdbWavesEffect>
+                                    <img [src]="user.photoURL" class="img-user">
+                            </button>
+                                                    
+                            <div class="dropdown-menu dropdown-primary">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <div class="divider dropdown-divider"></div>
+                                <a class="dropdown-item" (click)="auth.signOut()" >Sign Out  <i class="fas fa-sign-out-alt"></i></a>
+                                </div>
+                            </div>
+
+
+                </div>
+
+            </ng-template>
         </ul>
 
+        <ul class="navbar-nav flex-row">
+                <li class="nav-item" >
+                    <a class="nav-link"  >  </a>
+                </li>
 
-    <div  class="d-flex flex-row order-2 order-lg-3">
-
-        <div class="btn-group links-left" >
-                <ul class="navbar-nav ml-auto nav-flex-icons">
-
-
-                  <!--
-                        <li class="nav-item wow fadeIn"  data-wow-delay="0.9s" routerLinkActive="active"><a class="nav-link dropdown-toggle" [routerLink]="['notifi']"><i class="fa fa-bell fa-lg"></i></a></li>
-                        <li class="nav-item wow fadeIn"  data-wow-delay="0.6s" routerLinkActive="active"><a class="nav-link" [routerLink]="['#donar']"><i class="fa fa-heart fa-lg"></i></a></li>
-                        <li class="nav-item wow fadeIn"  data-wow-delay="0.3s" routerLinkActive="active"><a class="nav-link waves-light" [routerLink]="['dashboard']"><i class="fa fa fa-chart-pie fa-lg"></i></a></li>
-                  -->
-                    <li class="nav-item wow fadeInRight" mdbDropdown>
-                        <a  (click)="loginGoogle()" mdbBtn color="white" outline="true" class="wow fadeIn waves-light" data-wow-delay="0.4s" mdbWavesEffect>Ingresar</a>
-
+        
+            </ul>
+            <ul class="navbar-nav flex-row">
+                    <li class="nav-item" >
+                        <a class="nav-link"  >  </a>
                     </li>
+    
+            
+                </ul>
 
-                    </ul>
-                 </div>
-    </div>
 
     </links>
 
