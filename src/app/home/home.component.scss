@@ -19,6 +19,11 @@
   background-color:linear-gradient( rgba(37, 37, 37, 0.63),  rgba(0, 0, 0, 0.63));
 }
 
+.btn-resume:hover,
+.btn-resume:focus {
+  
+  transform: translateY(-0.25em);
+}
 .card1 {
   border-radius: 100%;
   height: 200px;
@@ -227,7 +232,4 @@ a[ id= "curve" ]:target ~ #panel article.panel {
   color: #356c99;
 }
 
-.django{
-  color: black
-}
 

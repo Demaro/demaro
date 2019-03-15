@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
 
     if (this.swUpdate.isEnabled) {
       this.swUpdate.available.subscribe(() => {
-          if(confirm("Nueva version de impulsa, desea actualizarla?")) {
+          if(confirm("Nueva version disponible, desea actualizarla?")) {
               window.location.reload();
           }
         });
