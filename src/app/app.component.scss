@@ -46,7 +46,7 @@
   
   @media (orientation: portrait) {
   
-    .connection {
+    .photo {
       height: 3%;
       width: 11%;
       margin-top: 0%;
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: 500px) {
-    .connection {
+    .photo {
       transform: translateX(180px);
   
     }
