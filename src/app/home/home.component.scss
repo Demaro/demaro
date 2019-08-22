@@ -116,16 +116,7 @@ a[ id= "curve" ]:target ~ #panel article.panel {
 
 
 
-.connection {
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  display: inline-block;
-  padding: 5px;
-  margin-right: 25px;
-  transform: translateY(200px);
-  transition: transform 1s cubic-bezier(.46, 1.48, .18, .81);
-}
+
 
 .card1:hover .connection {
   transform: translateY(0px);

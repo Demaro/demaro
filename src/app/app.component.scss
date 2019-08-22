@@ -29,13 +29,34 @@
     border-radius: 50%;
   }
 
-  .connection {
-    height: 86%;
-    width: 30%;
-    border-radius: 100%;
-    padding: 0px;
-    transform: translateX(130px);
 
+  @media (orientation: landscape) {
+
+    .connection {
+      float: right;
+      height: 86%;
+      width: 16%;
+      border-radius: 100%;
+      padding: 0px;
+      -webkit-transform: translateX(130px);
+      -ms-transform: translateX(130px);
+      transform: translateX(130px);
+    }
+  }
+  
+  @media (orientation: portrait) {
+  
+    .connection {
+      height: 3%;
+      width: 11%;
+      margin-top: 0%;
+      border-radius: 100%;
+      padding: 0px;
+      left: -45%;
+      -webkit-transform: translateX(130px);
+      -ms-transform: translateX(130px);
+      transform: translateX(130px);
+    }
   }
 
   @media (min-width: 500px) {
