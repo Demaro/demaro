@@ -14,10 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   loginGoogle(){
-    this.auth.googleSignIn()
-    .then(data => {
-      console.log(data)
-    })
+ 
   }
 
   scroll(id) {

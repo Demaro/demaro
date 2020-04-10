@@ -35,15 +35,7 @@ scroll(id) {
   el.scrollIntoView();
 }
 
-loginGoogle(){
-  this.auth.googleSignIn()
-  .then(data => {
-    console.log(data)
-  })
-  .catch(err=>{
-    console.log(err)
-  })
-}
+
 }
 
 

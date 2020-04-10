@@ -10,11 +10,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BlogComponent } from './blog/blog.component';
 import { ChatComponent } from './chat/chat.component';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { FirestoreSettingsToken} from '@angular/fire/firestore';
 
 
 @NgModule({
@@ -33,11 +29,8 @@ import { FirestoreSettingsToken} from '@angular/fire/firestore';
     FormsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    AngularFireAuthModule,
-    AngularFirestoreModule,
-    AngularFireModule.initializeApp(environment.firebase)
+
   ],
-  providers: [{ provide: FirestoreSettingsToken, useValue: {} }],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 })

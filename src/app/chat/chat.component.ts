@@ -21,9 +21,7 @@ export class ChatComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    const chatId = this.route.snapshot.paramMap.get('id');
-    const source = this.cs.get(chatId);
-    this.chat$ = this.cs.joinUsers(source);
+ 
 
   }
 

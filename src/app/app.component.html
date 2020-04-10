@@ -9,62 +9,6 @@
 
         
 
-            <ul class="navbar-nav ml-auto nav-flex-icons">
-                 
-
-                <div *ngIf="auth.user | async; then authenticated else guest">
-                    <!-- template will replace this div -->
-            </div>
-            
-            
-            <!-- User NOT logged in -->
-            <ng-template #guest>
-
-                
-                <li class="nav-item wow fadeInRight" mdbDropdown>
-                      
-                                
-
-
-                  <a  (click)="loginGoogle()" mdbBtn color="white" outline="true" class="wow fadeIn waves-light" data-wow-delay="0.4s" mdbWavesEffect>Ingresar <i class="fas fa-sign-in-alt"></i></a>
-                                
-
-                </li>
-
-
-                
-            
-            </ng-template>
-            
-            
-            <!-- User logged in -->
-            <ng-template #authenticated>
-
-                   
-                <div *ngIf="auth.user | async as user">
-
-
-                        <div class="dropdown" mdbDropdown>
-                                                    
-                            <button mdbDropdownToggle 
-                                mdbBtn floating="true" outline="true" size="sm" 
-                                class="mx-1 mb-0 btn-fb photo wow fadeIn waves-light" 
-                                type="button" mdbWavesEffect>
-                                    <img [src]="user.photoURL" class="img-user">
-                            </button>
-                                                    
-                            <div class="dropdown-menu dropdown-primary">
-                                <a class="dropdown-item" href="#">Profile</a>
-                                <div class="divider dropdown-divider"></div>
-                                <a class="dropdown-item" (click)="auth.signOut()" >Sign Out  <i class="fas fa-sign-out-alt"></i></a>
-                                </div>
-                            </div>
-
-
-                </div>
-
-            </ng-template>
-        </ul>
 
         <ul class="navbar-nav flex-row">
                 <li class="nav-item" >
